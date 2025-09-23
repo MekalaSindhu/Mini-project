@@ -23,17 +23,17 @@ variable "private_subnet_cidr" {
 }
 
 variable "availability_zone" {
-  description = "AZ to launch subnets in"
+  description = "Availability zone"
   type        = string
   default     = "us-east-1a"
 }
 
-variable "key_name" {
-  description = "EC2 key pair name"
+variable "key_pair_name" {
+  description = "Existing EC2 key pair name"
   type        = string
 }
 
 variable "bucket_name" {
-  description = "S3 bucket name"
+  description = " private S3 bucket name"
   type        = string
 }
